@@ -13,8 +13,12 @@ class AzureTestAppApplicationTests {
     Model model;
 
     @Test
-    void contextLoads() {
+    void iEquals0() {
         assertThat(model.i).isEqualTo(0);
     }
 
+    @Test
+    void jEquals1() {
+        assertThat(model.j).isEqualTo(1);
+    }
 }
